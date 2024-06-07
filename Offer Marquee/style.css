@@ -1,0 +1,35 @@
+.marquee-container {
+  width: 90%;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #1a2130;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+}
+.marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.marquee h3 {
+  margin: 0 15px;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee {
+    animation: marquee 10s linear infinite;
+  }
+  .marquee h3 {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}

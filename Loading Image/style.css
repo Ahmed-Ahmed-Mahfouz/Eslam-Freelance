@@ -17,7 +17,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f3f3f3;
+  background-color: #153448;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,15 +27,6 @@ html {
 .image {
   width: 200px;
   animation: fadeIn 3s ease-in-out;
-}
-
-.loader {
-  /* border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite; */
 }
 
 @keyframes fadeIn {
