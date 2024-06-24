@@ -13,6 +13,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const urlHash = window.location.hash;
         let pageTitle = "Product Page";
+        let imageSrc = "";
 
         if (urlHash.includes("watches")) {
           pageTitle = "الساعات";
@@ -38,9 +39,10 @@
     </script>
   </head>
   <body>
-    <div class="categoriesContainer">
+    <div class="categoryImage">
       <div class="title">categories</div>
-
+    </div>
+    <div class="categoriesContainer">
       <div class="listProduct">
         <div class="item">
           <img src="./img/berfum.png" alt="" width="120" height="150" />
