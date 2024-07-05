@@ -1,4 +1,4 @@
-let commentContainer = document.getElementById("commentSection");
+let commentContainer = document.getElementById("AllcommentsContainer");
 let username = document.getElementById("username");
 let comment = document.getElementById("comment");
 console.log(commentContainer)
@@ -6,10 +6,10 @@ console.log(commentContainer)
 
 
 function addcomment(e) {
-    e.preventDefault();
-    commentContainer.innerHTML += `<div class="commentContainer">
+  e.preventDefault();
+  commentContainer.innerHTML += `<div class="commentContainer">
     <div class="comment">
-      <h3>${username.value} </h3>
+      <h4>${username.value} </h4>
       <p>${comment.value} </p>
     </div>
     <img src="profile.png" alt=""  >

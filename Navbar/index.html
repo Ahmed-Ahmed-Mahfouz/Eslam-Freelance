@@ -157,7 +157,7 @@
       }
 
       #nightowl-switcher-default {
-        top: calc(-100px + 100vh) !important;
+        top: calc(-250px + 100vh) !important;
       }
 
       @media (max-width: 600px) {
@@ -167,6 +167,10 @@
         body {
           height: 100vh;
         }
+      }
+
+      .nightowl-dark body {
+        filter: invert(100%) hue-rotate(180deg) !important;
       }
     </style>
   </head>

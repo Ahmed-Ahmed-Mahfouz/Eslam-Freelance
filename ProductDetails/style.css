@@ -12,6 +12,7 @@ body {
 }
 .ProductDetailscontainer .title {
   font-size: xx-large;
+
   padding: 20px 0;
   margin-top: 10px;
 }
@@ -303,10 +304,10 @@ body {
   height: auto;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 30px;
 
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   margin-top: 30px;
 }
@@ -317,47 +318,49 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  flex-direction: row;
 }
 
 .ProductDetailscontainer .commentContainer img {
-  background-color: #2f2f2f;
+  /* background-color: #2f2f2f; */
   border-radius: 10px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   padding: 10px;
 }
 
 .ProductDetailscontainer .commentContainer .comment {
-  flex-grow: 1;
   display: felx;
   flex-direction: column;
   text-align: right;
-
+  font-size: 14px;
   margin-right: 20px;
 }
 .ProductDetailscontainer .commentContainer .comment p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* ----------------- add comment form */
 .ProductDetailscontainer .addcommentSection {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 20px;
+  transition: all 0.5s;
 }
 .ProductDetailscontainer .form-container {
   width: 400px;
-  background-color: #2f2f2f;
+  background-color: #2f4463;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
   color: white;
   display: flex;
+
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
@@ -371,6 +374,8 @@ body {
 .ProductDetailscontainer .form-container .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -383,29 +388,29 @@ body {
 .ProductDetailscontainer .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #717171;
+  color: #cac9c9;
   font-weight: 600;
   font-size: 16px;
 }
 
-.ProductDetailscontainer .form-container .form-group input {
-  width: 90%;
+.ProductDetailscontainer .form-container .form-group input[type="text"] {
+  width: 300px;
   padding: 12px 16px;
   border-radius: 8px;
   color: #fff;
   font-family: inherit;
   background-color: transparent;
-  border: 1px solid #414141;
+  border: 1px solid #ffffff67;
 }
 
 .ProductDetailscontainer .form-container .form-group textarea {
-  width: 90%;
+  width: 300px;
   padding: 12px 16px;
   border-radius: 8px;
   resize: none;
   color: #fff;
   height: 96px;
-  border: 1px solid #414141;
+  border: 1px solid #ffffff67;
   background-color: transparent;
   font-family: inherit;
 }
@@ -428,12 +433,12 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  align-self: flex-start;
+
   font-family: inherit;
-  color: #717171;
+  color: white;
   font-weight: 600;
   width: 40%;
-  background: #313131;
+  background: #0d6efd;
   border: 1px solid #414141;
   padding: 12px 16px;
   font-size: inherit;
@@ -444,14 +449,16 @@ body {
 }
 
 .ProductDetailscontainer .form-container .form-submit-btn:hover {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #0a58ca;
 }
 
 /* // ipad */
 @media only screen and (max-width: 992px) {
   .ProductDetailscontainer .detail {
     grid-template-columns: 40% 1fr;
+  }
+  .ProductDetailscontainer .commentSection {
+    flex-direction: column;
   }
 }
 
@@ -483,5 +490,8 @@ body {
 
   .ProductDetailscontainer .selectSize .select {
     overflow: visible;
+  }
+  .ProductDetailscontainer .commentSection {
+    flex-direction: column;
   }
 }
